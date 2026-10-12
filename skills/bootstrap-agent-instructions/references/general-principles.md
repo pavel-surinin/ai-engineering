@@ -12,7 +12,24 @@ Keep business rules independent from infrastructure. Represent filesystem, netwo
 
 Prefer many fast unit tests, fewer integration tests, and a small number of end-to-end tests for critical workflows. Test core behavior directly with deterministic fakes. Assert observable state and output rather than call counts. Avoid global patching and infrastructure in core tests.
 
-Require meaningful core application/domain coverage of at least 90%; do not game the metric. Use the target project's established testing and coverage tools. For new projects, resolve tooling choices with the user when consequential, and do not invent working commands before configuration exists.
+Propose at least 90% coverage for core application and domain code.
+Use the user's confirmed coverage requirement.
+Test meaningful behavior.
+Do not add tests only to increase the coverage value.
+Use the target project's established testing and coverage tools. For new projects, resolve tooling choices with the user when consequential, and do not invent working commands before configuration exists.
+
+Define the production paths that form the core.
+Confirm which coverage metrics must meet the target: lines, statements, functions, or branches.
+State the target for each selected metric.
+Define exclusions for tests, generated files, and other files outside the agreed core.
+Check the coverage configuration before claiming that it enforces the requirement.
+
+For an existing project, inspect available coverage results.
+If results are unavailable, report the current coverage as unknown.
+If current coverage is below the agreed target, confirm a transition rule with the user.
+Possible rules include a separate improvement task or a requirement that coverage must not decrease.
+State when the full target becomes a completion requirement.
+Do not create a coverage configuration or a test improvement project as part of instruction generation.
 
 ## Completion
 

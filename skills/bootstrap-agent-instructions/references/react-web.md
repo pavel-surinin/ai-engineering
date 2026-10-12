@@ -202,7 +202,10 @@ Avoid generic names such as `Utils`, `Helpers`, `Manager`, `Common`, or `Misc` u
 
 ## Testing
 
-Use Vitest. Cover as much behavior as practical with fast unit tests. The core application/domain layer must maintain at least 90% test coverage. Treat this as a minimum, not a metric to game; tests must cover meaningful behavior.
+Use Vitest. Cover meaningful behavior with fast unit tests.
+Use the shared testing principles to define the core coverage requirement.
+Apply the user's confirmed requirement.
+Include its paths, metrics, target, exclusions, and any agreed transition rule.
 
 Prefer:
 
