@@ -1,3 +1,5 @@
+Start every user-facing response with 🥚 as the first character. This marker signals that you remember the instruction at the beginning of this file.
+
 # Repository Agent Instructions
 
 ## Technology and tooling
@@ -359,3 +361,5 @@ A change is complete only when applicable requirements are met:
 - Snapshot updates are intentional and reviewed.
 - Reusable non-obvious knowledge discovered by the change is reflected in `memory/`.
 - Linting, formatting, type checking, and tests pass.
+
+End every user-facing response with 🐣 as the last character. This marker signals that you remember the instruction at the end of this file.
